@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .card{
+      border: 1px solid #ccc;
+      background: #f4f4f4;
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+    .enhance {
+      color: yellow;
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+  <!-- how to declare a variable meantime ID with it -->
+  <!-- div#main-header -->
+  <!-- #main-header -->
+  <!-- generally not to repeat ids -->
+  <div id="main-header" class="card">
+  <h1>My Website</h1>
+  <p>A site about me</p>
+</div>
+
+<!-- # means it links to itself -->
+<ul id="main-nav">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
+<div id="about" class="card">
+  <h3>About</h3>
+  <!-- if it is span then it does not take it to another line div breaks the current line and last line -->
+  <p>outside outside outside outside outside outside div ,<div class="enhance">inside div inside div inside div inside div inside div. inside div inside div</div> outside div  <span class="enhance"> inside span inside span  inside span inside span inside span </span>outside span outside span outside span outside span.</p>
+  
+</div> 
+  
+  <div id="contact" class="card">
+  <h3>Contact me</h3>
+  
+  <ul class="card">
+    <li>address: 50 main st, boston ma</li>
+    <li>phone : (555)555-5555</li>
+    <li>Email: me@something.com</li>
+  </ul>
+</div>
+  <div id="footer">
+    <p>
+      Copyright &copy;2019
+    </p>
+  </div>
+
+</div>
+</body>
+</html>
